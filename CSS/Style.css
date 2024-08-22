@@ -1,0 +1,1202 @@
+.section-navbar {
+    z-index: 9999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    background-image: url(../Assets/odoo/theme-hero.jpg);
+    background-position: center center;
+    background-repeat: repeat;
+    background-attachment: fixed;
+    box-shadow: 4px 2px 10px 0 #6e6e6e;
+}
+
+.nav-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 60px 10px 0px;
+    background-color: #10417a;
+    color: #ffffff;
+}
+
+.contact-info-i {
+    display: flex;
+    align-items: center;
+}
+
+.contact-info-i i {
+    margin-right: 18px;
+    margin-left: 30px;
+}
+
+.nav-info-i {
+    margin-left: -170px;
+}
+
+.social-icons-i a {
+    margin-left: 15px;
+    color: #000;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.social-icons-i a:hover {
+    color: #0073b1;
+    /* LinkedIn Blue */
+}
+
+.fab1 {
+    color: white;
+}
+
+.h2-section-nav-text {
+    font-size: 17px;
+    line-height: 22pt;
+    color: rgb(255 255 255);
+    word-spacing: 1px;
+    padding: 3px;
+}
+
+.div-nav {
+    display: flex;
+    width: 100%;
+    height: 120px;
+    background-color: white;
+}
+
+.nav-logo-img {
+    width: 20%;
+    text-align: center;
+}
+
+.ars-logo {
+    width: 90%;
+    padding-top: 13px;
+    text-align: center;
+    cursor: pointer;
+    /* to change text to logo after */
+}
+
+.nav-menu-list {
+    width: 70%;
+}
+
+.nav-list-ul {
+    list-style-type: none;
+    margin: 50px 0px 0px 0px;
+    text-align: center;
+    font-family: 'poppins', sans-serif;
+}
+
+.nav-list li {
+    display: inline;
+    margin-right: 2px;
+}
+
+.nav-list li a {
+    display: inline-block;
+    padding: 10px 18px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    transition: background-color 0.3s;
+    cursor: pointer;
+}
+
+ul.nav-list {
+    margin: 0;
+    padding: 0;
+}
+
+/* a code for nav submenu  */
+.has-submenu .submenu {
+    display: block;
+    position: absolute;
+    color: white;
+    background-color: #e2e0e0;
+    list-style: none;
+    margin: 15px 200px;
+    padding: 0;
+    z-index: 0;
+    box-sizing: border-box;
+    transform: scaleY(0);
+    transform-origin: top center;
+    transition: transform 0.3s ease;
+}
+
+.has-submenu:hover .submenu {
+    transform: scaleY(1);
+}
+
+.submenu {
+    display: none;
+    font-family: 'poppins', sans-serif;
+}
+
+.submenu li {
+    display: block;
+    margin: 0px;
+    padding: 3px;
+    text-align: left;
+    font-family: 'Poppins', sans-serif;
+}
+
+.submenu a {
+    text-decoration: none;
+    color: #020202;
+    font-weight: normal;
+    font-family: 'poppins', sans-serif;
+}
+
+.submenu-span-in {
+    padding: 10px 18px;
+}
+
+.btn-menu-list {
+    width: 0%;
+}
+
+.MenuButton {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #2c3742;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    margin: 40px 0px 0px 55px;
+    display: none;
+}
+
+/* start a new section */
+.container-i {
+    background-image: url(../Assets/index_images/bg-hero.png);
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    width: 100%;
+    height: auto;
+    opacity: 1;
+    position: relative;
+    background-color: #1363c6 !important;
+
+}
+
+.container-banner {
+    display: flex;
+    width: 100%;
+    margin-top: 165px;
+}
+
+.container-banner-i {
+    width: 50%;
+}
+
+.banner-i-in {
+    padding: 50px 20px 20px 50px;
+}
+
+.h1-baner-text {
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+    padding: 50px 0px 20px 0px;
+    /* font-family: 'poppins', sans-serif; */
+    font-family: 'Montserrat', sans-serif;
+}
+
+.p-baner-text {
+    font-size: 12pt;
+    line-height: 17pt;
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    padding: 0px 8px 40px 0px;
+    word-spacing: 3px;
+    text-transform: capitalize;
+
+}
+
+.container-banner-ii {
+    width: 50%;
+}
+
+.home-baner-width {
+    width: 95%;
+    margin-top: -28px;
+    padding-left: 40px;
+}
+
+.btn-bannr-outer {
+    margin: 0px;
+}
+
+.btn-banner-button {
+    border-radius: 3px;
+    width: 140px;
+    height: 40px;
+    display: block;
+    background: linear-gradient(to right, black 50%, white 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: background-position .5s ease-out;
+    cursor: pointer;
+}
+
+.btn-banner-button:hover {
+    background-position: left bottom;
+}
+
+.btn-text {
+    text-align: center;
+    line-height: 38px;
+    color: black;
+    transition: color .9s ease-out;
+    display: block;
+    font-size: 12pt;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.btn-banner-button:hover .btn-text {
+    color: white;
+    font-size: 12pt;
+    font-weight: 500px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.h1-about-text {
+    font-size: 27px;
+    font-weight: bold;
+    color: rgb(16 68 80);
+    padding: 50px 0px 20px 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.about-container {
+    height: auto;
+    width: 100%;
+    padding: 0px 70px;
+    background-color: rgb(255, 255, 255);
+}
+
+.about-container-i {
+    display: flex;
+    width: 100%;
+    padding: 0px 0px;
+}
+
+.about-data {
+    width: 25%;
+    background-color: #c5dae7;
+    margin: 25px;
+    height: 170px;
+    border-radius: 5px;
+}
+
+.h2-about-text {
+    font-size: 27px;
+    font-weight: bold;
+    color: #10417a;
+    text-align: center;
+    padding-top: 37px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.h4-about-text {
+    font-size: 18px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding-top: 25px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.p-about-text {
+    font-size: 15px;
+    color: black;
+    font-weight: 500;
+    word-spacing: 2px;
+    line-height: 25px;
+    padding: 30px 0px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+.about-market-in {
+    display: flex;
+    width: 100%;
+    padding: 60px 25px 0px 25px;
+}
+
+.about-market-data {
+    margin: 20px;
+    width: 100%;
+    background-color: #092f4f !important;
+}
+
+.about-market-i {
+    height: 300px;
+}
+
+.h1-market-text {
+    font-size: 17pt;
+    line-height: 25pt;
+    font-weight: bold;
+    padding: 20px 5px 10px 20px;
+    color: rgb(222, 235, 52);
+    word-spacing: 3px;
+}
+
+.p-market-text {
+    font-size: 12pt;
+    line-height: 17pt;
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    padding: 0px 8px 10px 20px;
+    word-spacing: 3px;
+}
+
+.about-market-ii {
+    overflow: hidden;
+    position: relative;
+}
+
+.about-market-width {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.about-market-ii:hover .about-market-width {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.about-technology {
+    height: auto;
+}
+
+.h2-about-technology-in {
+    font-size: 27px;
+    font-weight: 800;
+    color: #290d60;
+    padding: 75px 0px 0px 80px;
+    text-align: left;
+    letter-spacing: 1px;
+}
+
+.p-about-technology-data {
+    font-size: 15px;
+    font-weight: 500;
+    color: #000000;
+    line-height: 30px;
+    text-align: left;
+    margin: 0px;
+    padding: 20px 80px 0px 80px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.about-horizontal-line-big {
+    width: 15%;
+    color: #000000;
+    border: 5px solid;
+    margin: 19px 0px 0px 80px;
+}
+
+/* a code for career technology */
+
+/* Style the tab buttons */
+.tabContainer {
+    overflow: hidden;
+    border: 2px solid #ccc;
+    height: 55px;
+    width: 92%;
+    margin: 80px 50px 0px 50px;
+    border-color: #10417a;
+    border-left-width: 0;
+    border-left-style: none;
+    border-right-width: 0;
+    border-right-style: none;
+    border-top-width: 0;
+    border-top-style: none;
+}
+
+/* Style the buttons inside the tab */
+.tabButton {
+    width: 16.66%;
+    margin: 0px;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 5px;
+    transition: 0.3s;
+    height: 55px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #000000;
+    background-color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.tabButton.active {
+    background-color: #10417a;
+    color: white;
+}
+
+.tabContent {
+    padding: 0px 80px;
+    border-top: none;
+    height: 1870px;
+    border-radius: 12px;
+    background-color: rgb(244 249 255);
+    border: 1px solid lightgrey;
+    margin: 35px 30px 0px 30px;
+}
+
+.about-technology-width {
+    width: 90%;
+    height: 300px;
+    margin: 10px;
+    text-align: center;
+    object-fit: cover;
+    background-color: #f9f6f6;
+    box-shadow: 0px 0px 30px 10px #edecec;
+    border: 1px solid #ebebeb;
+    transition: transform 0.8s ease;
+}
+
+.tab-about-technology {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px 15px;
+    width: 100%;
+    margin-top: 50px;
+}
+
+.tab-about-technology-option {
+    text-align: center;
+    width: 95%;
+    height: auto;
+    padding-top: 18px;
+    overflow: hidden;
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(233, 231, 231);
+    margin: 10px;
+    box-shadow: 0px 0px 4px 1px #e3e1e1;
+}
+
+.tab-about-technology-option .about-technology-width:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.h2-name-client {
+    font-size: 22px;
+    font-weight: 800;
+    color: #10417a;
+    padding: 45px 0px 0px 20px;
+    letter-spacing: 1px;
+}
+
+.p-about-market-text {
+    padding: 15px;
+    line-height: 28px;
+    font-size: 14px;
+}
+
+.about-counter {
+    height: 475px;
+}
+
+.counter-section {
+    text-align: center;
+    margin: 40px;
+    width: 100%;
+}
+
+.counter {
+    color: #050c3b;
+    font-size: 43px;
+    font-weight: bold;
+}
+
+.counter-section-inside {
+    display: flex;
+    padding-left: 30px;
+}
+
+.h1-text-case-career-in {
+    color: #050c3b;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 10px 0px 0px 0px;
+}
+
+.fa5 {
+    font: normal normal normal 14px / 1 FontAwesome;
+    color: #10417a !important;
+    font-size: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: normal;
+    border-radius: 50px;
+    height: 75px;
+    width: 80px;
+    cursor: pointer;
+    background-color: #f4f7fe;
+    margin-right: 15px;
+}
+
+.career-counter-section {
+    display: flex;
+    width: 100%;
+    padding: 50px 100px 0px 100px;
+}
+
+.career-ul-line {
+    height: 115px;
+    margin-top: 40px;
+    border-left: 1px solid #10417a;
+}
+
+/* end section */
+
+
+/* start histroy section */
+.history-slider {
+    text-align: center;
+    padding: 40px 20px 80px 20px;
+    background-color: #08244f;
+    color: white;
+    position: relative;
+}
+
+.history-slider h2 {
+    margin-bottom: 30px;
+    font-size: 28px;
+    font-weight: 600;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.slider-container {
+    position: relative;
+    max-width: 90%;
+    height: 300px;
+    margin: auto;
+    overflow: hidden;
+    background-color: #ffffff;
+    border-radius: 10px;
+}
+
+.slider-histroy {
+    display: flex;
+    padding: 50px 25px;
+    transition: transform 0.4s ease;
+}
+
+.slide-frame {
+    min-width: 31.33%;
+    height: 200px;
+    box-sizing: border-box;
+    padding: 20px;
+    background-color: white;
+    color: #333;
+    border-radius: 10px;
+    margin: 0 10px;
+    text-align: left;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgb(161, 161, 161);
+}
+
+.slide-frame h3 {
+    margin: 0;
+    font-size: 24px;
+    color: #08244f;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.slide-frame h4,
+.about-industry-content div h3 {
+    margin: 10px 0;
+    font-size: 20px;
+    color: #10417a;
+    font-weight: bolder;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.slide-frame p {
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.btn-prev,
+.btn-next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 12px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 50%;
+    background-color: rgb(6 6 6 / 50%);
+    transition: 0.6s ease;
+    user-select: none;
+}
+
+.btn-next {
+    right: 20px;
+}
+
+.btn-prev {
+    left: 20px;
+}
+
+.btn-prev:hover,
+.btn-next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.dots-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: #717171;
+}
+
+/* here is explore project  */
+.explore-projects-container {
+    position: relative;
+    max-width: 87%;
+    margin: auto;
+    padding-top: 25px;
+}
+
+.explore-projects-container h2,
+.explore-projects-container h3,
+.testimonial-container h2,
+.about-industry-header div h2,
+.board-container-in h1,
+.about-card-container h1,
+.about-vision-container h1 {
+    padding: 20px 0px;
+    margin: 0px;
+    font-size: 30px;
+    color: #777;
+    text-align: center;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.explore-projects-container h3 {
+    font-size: 28px;
+    color: #003366 !important;
+}
+
+.explore-projects-slider {
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.explore-projects-slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.explore-projects-slide {
+    min-width: 31.33%;
+    box-sizing: border-box;
+    margin: 10px;
+}
+
+.explore-projects-slide img {
+    width: 100%;
+    height: 230px;
+}
+
+.explore-projects-slide p {
+    font-size: 16px;
+    color: #555;
+    margin-top: 10px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.explore-projects-prev,
+.explore-projects-next {
+    cursor: pointer;
+    position: absolute;
+    top: 63%;
+    width: 4%;
+    height: 11%;
+    padding: 10px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 100%;
+}
+
+.explore-projects-next {
+    right: -35px;
+}
+
+.explore-projects-prev {
+    left: -50px;
+}
+
+.explore-projects-prev:hover,
+.explore-projects-next:hover {
+    background-color: rgb(0 0 0 / 50%);
+}
+
+
+/* here is footer code */
+footer {
+    background-color: #08244f;
+    color: #fff;
+    padding: 50px 0px 0px 0px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-section {
+    flex-basis: 30%;
+}
+
+.footer-section h2 {
+    font-size: 22px;
+    margin-bottom: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.footer-section p {
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+.footer-section .tagline {
+    font-style: italic;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+.social-icons a {
+    color: #fff;
+    margin-right: 15px;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #ff9900;
+}
+
+.footer-section ul {
+    list-style: none;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.footer-section ul li a:hover {
+    color: #ff9900;
+}
+
+.footer-section ul {
+    padding: 0px;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.footer-bottom {
+    background-color: #03193a;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 30px;
+}
+
+.footer-bottom p {
+    margin-bottom: 0;
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.footer-bottom a {
+    color: #ff9900;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.footer-bottom a:hover {
+    color: #fff;
+}
+
+.btn.btn-link::before {
+    position: relative;
+    content: "\f105";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    margin-right: 10px;
+}
+
+.testimonial-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-container h2,
+.about-industry-header div h2,
+.board-container-in h1,
+.about-card-container h1 {
+    color: #003366;
+}
+
+.testimonial-container h2::after,
+.explore-projects-container h3::after {
+    content: '';
+    display: block;
+    width: 15%;
+    height: 3px;
+    background-color: #003366;
+    margin: 10px auto 0;
+}
+
+.testimonial-box {
+    background-color: #e9f4fb;
+    border-radius: 5px;
+    padding: 0px 20px 20px 20px;
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.testimonial-box::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 10px;
+    border-style: solid;
+    border-color: #e9f4fb transparent transparent transparent;
+}
+
+.testimonial-text {
+    font-size: 18px;
+    color: #555;
+    margin: 0;
+}
+
+.customer-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+}
+
+.customer-info img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.customer-info h4 {
+    margin: 0;
+    color: #003366;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.customer-info p {
+    margin: 5px 0 0;
+    color: #0066cc;
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* code ended of index.html page */
+
+/* a code start of about page */
+.about-industry-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 30px auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.about-industry-header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 50px;
+}
+
+.about-industry-header img {
+    max-width: 50%;
+    height: 230px;
+    border-radius: 5px;
+    margin-top: 60px;
+}
+
+.about-industry-header h2 {
+    font-size: 2.5em;
+    color: #0D2E6E;
+    margin-left: 20px;
+}
+
+.about-industry-content {
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+}
+
+.about-industry-content div {
+    flex: 1;
+    margin: 0 10px;
+    padding: 20px;
+    background-color: #f4f7f7;
+    border-radius: 0px;
+}
+
+.about-industry-content div h3 {
+    margin: 0px 0px 10px 0px;
+}
+
+.about-industry-content div ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.about-industry-content div ul li,
+.about-industry-content div p,
+.about-card-text {
+    margin-bottom: 10px;
+    font-size: 1em;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.about-industry-content div ul li::before {
+    content: "➤";
+    color: #0D2E6E;
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.p-about-industry-data {
+    padding: 0px 0px 0px 20px;
+}
+
+.board-container {
+    justify-content: center;
+}
+
+.board-container-in {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 15px 40px 40px 40px;
+    text-align: center;
+    margin: 50px 155px;
+}
+
+.board-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 20px;
+}
+
+.board-content .board-image-container {
+    flex: 1;
+    text-align: center;
+    position: relative;
+    max-width: 45%;
+}
+
+.board-content .board-image-container img {
+    width: 100%;
+    border-radius: 10px;
+    border-top-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.blue-borders {
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    bottom: -10px;
+    right: -10px;
+    border: 5px solid #003366;
+    border-top-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+.board-content .text-content {
+    flex: 1;
+    padding-left: 30px;
+    padding-right: 30px;
+    max-width: 50%;
+}
+
+.p-board-content-text {
+    padding: 0px;
+}
+
+/*  */
+.about-card-container {
+    text-align: center;
+    background-color: white;
+    padding: 30px 40px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    /* Ensures content stays within the container */
+}
+
+.about-card-wrapper,
+.about-vision-cards-in {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    padding-top: 30px;
+}
+
+.about-card {
+    background-color: white;
+    border: 1px solid #dcdcdc;
+    border-radius: 8px;
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.8s ease;
+    overflow: hidden;
+}
+
+.about-card:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.about-card-icon {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+/*  */
+.about-vision-container h1 {
+    padding: 0px 0px 30px 0px;
+}
+
+.about-vision-container {
+    width: 100%;
+    padding: 60px 60px;
+    text-align: center;
+}
+
+.about-vision-card {
+    background-color: #f4f7f7;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 10px;
+    text-align: left;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.about-vision-card:hover {
+    transform: scale(1.1);
+}
+
+.about-vision-card h2 {
+    color: #002d72;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+
+    padding: 0px 0px 20px 0px;
+    margin: 0px;
+    font-size: 25px;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.about-vision-card h2 img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    transition: transform 0.3s ease;
+}
+
+.about-vision-card:hover {
+    transform: scale(0.9);
+    cursor: pointer;
+    background-color: white;
+}
+
+.p-about-vision-text {
+    padding: 0px;
+}
