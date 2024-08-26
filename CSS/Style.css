@@ -1,3 +1,16 @@
+/** Spinner **/
+#spinner {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .5s ease-out, visibility 0s linear .5s;
+    z-index: 0px;
+}
+
+#spinner.show {
+    transition: opacity .5s ease-out, visibility 0s linear 0s;
+    visibility: visible;
+    opacity: 1;
+}
 .section-navbar {
     z-index: 9999;
     position: fixed;
@@ -101,8 +114,10 @@
     padding: 10px 18px;
     text-decoration: none;
     color: rgb(0, 0, 0);
-    transition: background-color 0.3s;
     cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.3s;
+    font-family: 'Montserrat', sans-serif;
 }
 
 ul.nav-list {
@@ -256,6 +271,7 @@ ul.nav-list {
     display: block;
     font-size: 12pt;
     font-weight: bold;
+    text-decoration: none;
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -624,7 +640,10 @@ ul.nav-list {
 }
 
 .slide-frame h4,
-.about-industry-content div h3 {
+.about-industry-content div h3,
+.services-product-grid-item h3,
+.career-job-title-header,
+.career-meet-card-content h3 {
     margin: 10px 0;
     font-size: 20px;
     color: #10417a;
@@ -701,7 +720,13 @@ ul.nav-list {
 .about-industry-header div h2,
 .board-container-in h1,
 .about-card-container h1,
-.about-vision-container h1 {
+.about-vision-container h1,
+.services-metal-content h2,
+.services-product-header h1,
+.capabilities-section h2,
+.career-job-title,
+.career-job-apply-form h3,
+.career-meet-container h1 {
     padding: 20px 0px;
     margin: 0px;
     font-size: 30px;
@@ -897,12 +922,21 @@ footer {
 .testimonial-container h2,
 .about-industry-header div h2,
 .board-container-in h1,
-.about-card-container h1 {
+.about-card-container h1,
+.services-metal-content h2,
+.services-product-header h1,
+.capabilities-section h2,
+.career-job-title,
+.career-job-apply-form h3,
+.career-meet-container h1 {
     color: #003366;
 }
 
 .testimonial-container h2::after,
-.explore-projects-container h3::after {
+.explore-projects-container h3::after,
+.board-container-in h1::after,
+.about-card-container h1::after,
+.career-meet-container h1::after {
     content: '';
     display: block;
     width: 15%;
@@ -1023,16 +1057,23 @@ footer {
 
 .about-industry-content div ul li,
 .about-industry-content div p,
-.about-card-text {
+.about-card-text,
+.services-contact-description,
+.capabilities-list li,
+.career-job-location,
+.career-job-date,
+.career-job-requirements li,
+.career-meet-card-content p {
     margin-bottom: 10px;
-    font-size: 1em;
+    font-size: 16px;
     font-weight: 500;
     display: flex;
     align-items: center;
     font-family: 'Montserrat', sans-serif;
 }
 
-.about-industry-content div ul li::before {
+.about-industry-content div ul li::before,
+.career-job-requirements li::before {
     content: "➤";
     color: #0D2E6E;
     margin-right: 10px;
@@ -1199,4 +1240,402 @@ footer {
 
 .p-about-vision-text {
     padding: 0px;
+}
+/* a code end of about us page */
+
+/* a code start service page */
+.services-metal-mid {
+    margin: 20px 50px;
+}
+.services-metal-header {
+    background-color: #002e5d;
+    padding: 40px;
+    color: white;
+    text-align: left;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.services-metal-header h1,
+.services-contact-heading {
+    margin: 0;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.services-metal-breadcrumb {
+    padding: 10px 0px;
+    background-color: #002e5d;
+    font-size: 0.9em;
+}
+
+.services-metal-breadcrumb a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.services-metal-breadcrumb a:hover {
+    text-decoration: underline;
+}
+
+.services-metal-content {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+}
+
+.p-services-data-text {
+    padding: 0px 120px 0px 120px;
+}
+
+/*  */
+
+.services-product-container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 40px auto;
+    text-align: center;
+}
+
+.services-product-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.services-product-header h1::before {
+    font-size: 1.5em;
+    margin-right: 10px;
+}
+
+.services-product-header .services-product-view-all {
+    background-color: #0056a3;
+    color: #ffffff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1em;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.services-product-header .services-product-view-all:hover {
+    background-color: #003a6d;
+}
+
+.services-product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.services-product-grid-item {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.services-product-grid-item.selected {
+    border: 2px solid #0056a3;
+    box-shadow: 0 4px 12px rgba(0, 86, 163, 0.3);
+}
+
+.services-product-grid-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.services-product-grid-item img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+.services-industry-header {
+   margin: 0px 120px 80px;
+}
+.services-industry-header-img {
+    height: 400px !important;
+}
+.services-industry-group {
+    padding-left: 40px;
+}
+.services-industry-group h2 {
+    text-align: left;
+}
+.services-industry-header .services-industry-group h2,
+.capabilities-section h2,
+.career-job-apply-form h3 {
+    text-align: left;
+}
+.p-services-industry-data {
+    padding: 0px;
+}
+
+/*  */
+.services-contact-section {
+    color: white;
+    text-align: center;
+    padding: 20px 20px 60px;
+    position: relative;
+}
+
+.services-contact-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #002e5d; 
+}
+
+.services-contact-content {
+    position: relative;
+    z-index: 1;
+    padding: 40px;
+    color: white;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.services-contact-title {
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+.services-contact-description {
+    padding: 20px;
+    font-size: 15px;
+}
+.btn-services-ctc-button {
+    position: absolute;
+    left: 580px;
+}
+
+/*  */
+.capabilities-section {
+    padding: 40px;
+    background-color: #ffffff;
+}
+
+.capabilities-section p {
+   padding: 0px;
+}
+
+.capabilities-list {
+    list-style: none;
+    padding: 12px 0px;
+    margin: 0px;
+}
+
+.capabilities-list li {
+    position: relative;
+    padding-left: 35px;
+}
+
+.capabilities-list li::before {
+    content: "➤";
+    color: rgb(13, 46, 110);
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+
+/* here is career page code start */
+.career-job-container {
+    width: 90%;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.career-job-title {
+    text-align: left;
+    padding-left: 78px;
+}
+
+.career-job-listing {
+    border-left: 8px solid #003366 !important;
+    border: 1px solid #e0e0e0;
+    border-radius: 0px;
+    padding: 10px 15px 20px 15px;
+    margin: 30px 80px;
+    transition: background-color 0.3s ease, transform 1s ease;
+    cursor: pointer;
+    position: relative;
+}
+
+.career-job-listing:hover {
+    background-color: #f0f8ff;
+    transform: scaleX(1.1);
+}
+
+.career-job-listing.no-scale:hover {
+    transform: none;
+}
+
+.career-job-listing.form-open {
+    border-left: 1px solid #d1d1d1 !important;
+    border: 1px solid #d1d1d1;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transform: none;
+}
+
+.career-job-listing.no-border {
+    border: none !important;
+}
+
+
+.career-job-apply-form {
+    display: none;
+    padding: 15px 25px;
+    margin-top: 10px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    border: 1px solid #e3e3e3;
+}
+
+.career-job-apply-form h3 {
+    font-size: 28px;
+}
+
+.career-job-description {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.career-job-requirements {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 15px;
+    list-style: none;
+    padding: 0;
+}
+
+.career-job-experience-badge,
+.career-job-form-grid button {
+    background-color: #0D2E6E;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    margin-bottom: 20px;
+    display: inline-block;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.career-job-requirements li {
+    font-size: 15px;
+}
+
+.career-job-form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.career-job-form-grid input,
+.career-job-form-grid textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.career-job-form-grid textarea {
+    grid-column: span 2;
+}
+
+.career-job-form-grid button {
+    width: 35%;
+    height: 40px;
+    border: none;
+}
+
+.career-job-form-grid button:hover {
+    background-color: #0056b3;
+}
+
+
+/*  */
+.career-meet-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+.career-meet-card-container {
+    margin: 50px 0px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    height: 590px;
+}
+
+.career-meet-card {
+    background-color: #fff;
+    width: 100%;
+    max-width: 350px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.career-meet-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.career-meet-card img {
+    width: 100%;
+    height: auto;
+}
+
+.career-meet-card-content {
+    padding: 20px;
+    text-align: left;
+    flex-grow: 1;
+}
+
+.career-meet-card-content p {
+    font-size: 14px;
+}
+
+.career-meet-card-footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #0D2E6E;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.career-meet-card-footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+.career-meet-card-footer a:hover {
+    color: #f0bf2e;
 }
